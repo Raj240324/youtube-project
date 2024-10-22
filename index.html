@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Project Basic</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <script src="./script.js"></script>
+<div class="whole-content">
+    <div class="nav-container">
+        <div class="menu-logo">
+          <button class="menu-btn" value="button"><img class="menu" src="./icons/icons8-menu-48.png" alt="menu-icon" width="24px"></button>
+          <span class="span-tube"><a href="https://www.youtube.com/"><img class="youtube-logo" src="./logos/icons8-youtube-48.png" alt="logo"></a>Youtube</span>
+        </div>
+        
+        <div class="search-container">
+                <input class="search-input" type="search" placeholder="Search">
+                <button id="search-icon" type="button" title="Search"><img src="./icons/8666693_search_icon.png" alt="search"  width="24px"></button>
+                <button id="voice-btn" type="button" title="Search with your voice"><img src="./icons/icons8-microphone-24.png" alt="microphone" width="24px"></button>
+        </div>
+        <div class="bell-container">
+            <button id="create-btn" type="button" title="create"><img src="./icons/4781840_+_add_circle_create_expand_icon.png" alt="create" width="24px"></button>
+            <button id="bell-btn" type="button" title="Notifications"><img src="./icons/290107_alarm_alert_bell_christmas_notification_icon.png" alt="bell" width="24px"></button>
+            <img id="profile-pic" src="./images/IMG_20201108_112919_Bokeh__01.jpg" width="20px" alt="profile">
+        </div>
+    </div>
+
+
+   
+  
+        <div class="header-scroller">
+            <p class="para active">All</p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=javascript">Javascript</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=vj+siddhu+vlogs">VJ Siddhu Vlogs</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=live">Live</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=display+devices">Display Devices</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=news">News</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=os">Operating system</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=music">Music</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=iphone">iPhones</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=tamil+cinema">Tamil Cinema</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=technology">Technology</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=scientific+study">Scientific Study</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=vijay+television">Vijay Television</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=suntv">Sun TV</a></p>
+            <p class="para"><a style="text-decoration: none; color:black" href="https://www.youtube.com/results?search_query=entertainment">Entertainment</a></p>
+        </div>
+
+        
+        <div class="vertical-fixed-icon-container">
+            <div class="vertical-container"><a style="text-decoration: none; color:black" href="https://www.youtube.com/"><img src="./youtube-vertical-icons/icons8-home-100.png" alt="home" width="24px"><br>Home</a></div>
+            <div class="vertical-container"><a style="text-decoration: none; color:black" href="https://www.youtube.com/shorts/Nf1eLVZ3JO8"><img src="./youtube-vertical-icons/icons8-youtube-shorts-100.png" alt="home" width="24px"><br>Shorts</a></div>
+            <div class="vertical-container"><a style="text-decoration: none; color:black" href="https://www.youtube.com/feed/subscriptions"><img src="./youtube-vertical-icons/icons8-video-playlist-100.png" alt="home" width="24px"><br>Subscriptions</a></div>
+            <div class="vertical-container"><a style="text-decoration: none; color:black" href="https://www.youtube.com/feed/you"><img src="./youtube-vertical-icons/icons8-video-playlist-100 (1).png" alt="home" width="24px"><br>You</a></div>
+        </div>
+
+         <!--
+        <div class="sidebar-menu">
+            <div class="menu-logo">
+                <button class="menu-btn"><img class="menu" src="./icons/icons8-menu-48.png" alt="menu-icon" width="24px"></button>
+                <span class="span-tube"><a href="https://www.youtube.com/"><img class="youtube-logo" src="./logos/icons8-youtube-48.png" alt="logo"></a>Youtube</span>
+              </div> 
+              <div class="sidebar-content">
+                <a class="home-tag" href="#home"><img src="./youtube-vertical-icons/icons8-home-100.png" alt="home" width="24px"><b>Home</b></a>
+                <a href="#shorts"><img src="./youtube-vertical-icons/icons8-youtube-shorts-100.png" alt="home" width="24px">Shorts</a>
+                <a href="#subscriptions"><img src="./youtube-vertical-icons/icons8-video-playlist-100.png" alt="home" width="24px">Subscriptions</a>
+    
+                <hr class="hr-ruler">
+    
+                <div class="you-container"><a href="#you"><b>You ></b></a>
+                    <a href="#">Your Channel</a>
+                    <a href="#">History</a>
+                    <a href="#">Playlists</a>
+                    <a href="#">Your Videos</a>
+                    <a href="#">Watch Later</a>
+                    <a href="#">Liked videos</a>
+                    <a href="#">Your clips</a>
+            
+                </div>
+    
+                <hr class="hr-ruler">
+    
+                <div class="explore-container"><a href="#Explore"><b>Explore</b></a>
+                    <a href="#">Trending</a>
+                    <a href="#">Shopping</a>
+                    <a href="#">Music</a>
+                    <a href="#">Films</a>
+                    <a href="#">Gaming</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Podcasts</a>
+            
+                </div>
+    
+                <hr class="hr-ruler">
+    
+                <div class="settings-container">
+                    <a href="#">Settings</a>
+                    <a href="#">Help</a>
+                    <a href="#">Report feedback</a>
+                </div>
+    
+                <hr class="hr-ruler">
+    
+    
+              </div>
+
+            -->
+    
+
+       
+
+        <div class="box-container1">
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/siddhu image.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./logos/siddhu vlog.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Comedy kku panjam aagiduchu nanbargaley</h2>
+                            <p class="input-para">Vlog Kastangal</p>
+                            <p class="input-para">675k Views 7 months ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><a href="https://www.youtube.com/watch?v=bj_3GETUv7s" target="_blank"><img src="./images/nandha.png" alt="image"></a></div>
+                    <div class="input-content">
+                        <div><img  class="container-image" src="./logos/chinki.png" width="20px"></div>
+
+                        <div>
+                            <h2>Android kku Muttu kudupom Nanbargaley!</h2>
+                            <p class="input-para">Android Muttu</p>
+                            <p class="input-para">1.2 million Views 1 week ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/singam.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./logos/singam logo.png" width="20px"></div>
+
+                        <div>
+                            <h2>Singapengal nam naatu kangal</h2>
+                            <p class="input-para">Morattu Singam Channel</p>
+                            <p class="input-para">999k Views  3 days ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/laddu.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/telugu news.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Thirupati Laddu with Beef fat, Pork Fat</h2>
+                            <p class="input-para">Thirumala News 24/7</p>
+                            <p class="input-para">100k Views 24 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/blue sattai.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/tamil talkies.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Padam nu pera ketaley Kaluvi oothuven</h2>
+                            <p class="input-para">Kasanguna Sattai</p>
+                            <p class="input-para">0 Views 10K years ago</p>
+                        </div>
+                    </div>
+            </div>
+           
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/gym tharun.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/tharun.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Enna Gym Trainer nu namba mudiyutha?</h2>
+                            <p class="input-para">Tharun Sothanaigal</p>
+                            <p class="input-para">52K Views 9 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+            
+                
+            
+        </div>
+
+    </div>
+
+    
+                
+         
+            
+</div>
+       <div class="box-container2">
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/Screenshot 2024-09-08 120722.png" alt="image"></div>
+                 <div class="input-content"> 
+                        <div><img class="container-image" src="./images/IMG_20201108_112919_Bokeh__01.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Basic Portfolio Website Design</h2>
+                            <p class="input-para">Nagaraj Frontend Developer</p>
+                            <p class="input-para">254k Views 24 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+         
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/ios18.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/Screenshot 2024-09-21 182753.png" width="20px"></div>
+
+                        <div>
+                            <h2>iOS 18 Is there any new feature?</h2>
+                            <p class="input-para">iOS paithiyangal</p>
+                            <p class="input-para">10K Views 2 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/Screenshot 2024-09-08 120842.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/bro code.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Advanced Website Design</h2>
+                            <p class="input-para">Bro Code</p>
+                            <p class="input-para">521K Views 9 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/ios18.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/siddhu image.png" width="20px"></div>
+
+                        <div>
+                            <h2>iOS 18 Is there any new feature?</h2>
+                            <p class="input-para">iOS paithiyangal</p>
+                            <p class="input-para">10K Views 2 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/card effect.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/IMG_20201108_112919_Bokeh__01.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Card Effect Animations</h2>
+                            <p class="input-para">Nagaraj Animation Tutorial</p>
+                            <p class="input-para">1Crore Views 1 hour ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/design.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/IMG_20201108_112919_Bokeh__01.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Website design using HTML,CSS</h2>
+                            <p class="input-para">Nagaraj Design Tutorial</p>
+                            <p class="input-para">999k Views 2 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+                
+            
+        </div>
+                
+            
+            
+</div>
+
+
+        <div class="box-container3">
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/laddu.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/telugu news.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Thirupati Laddu with Beef fat, Pork Fat</h2>
+                            <p class="input-para">Thirumala News 24/7</p>
+                            <p class="input-para">100k Views 24 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/blue sattai.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/tamil talkies.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Padam nu pera ketaley Kaluvi oothuven</h2>
+                            <p class="input-para">Kasanguna Sattai</p>
+                            <p class="input-para">0 Views 10K years ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/parker model.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/parker model.png" width="20px"></div>
+
+                        <div>
+                            <h2>Full Stack Developer and a Model</h2>
+                            <p class="input-para">Model Parky</p>
+                            <p class="input-para">500K Views 5 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/fonearena.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./logos/fonearena.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Techie nu sollipom aana tech theriyathu?</h2>
+                            <p class="input-para">Vetti pechugal</p>
+                            <p class="input-para">5K Views 9 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/card effect.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/IMG_20201108_112919_Bokeh__01.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Card Effect Animations</h2>
+                            <p class="input-para">Nagaraj Animation Tutorial</p>
+                            <p class="input-para">1Crore Views 1 hour ago</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="box-input-container">
+                <div class="Box1"><img src="./images/design.png" alt="image"></div>
+                    <div class="input-content">
+                        <div><img class="container-image" src="./images/bro code.jpg" width="20px"></div>
+
+                        <div>
+                            <h2>Website design using HTML,CSS</h2>
+                            <p class="input-para">Nagaraj Design Tutorial</p>
+                            <p class="input-para">999k Views 2 hours ago</p>
+                        </div>
+                    </div>
+            </div>
+           
+                
+            
+        </div> 
+                
+            
+            
+</div> 
+
+
+       
+
+</body>
+</html>
